@@ -36,6 +36,7 @@ class ProductSchema extends Schema {
         .inTable('products')
         .onDelete('cascade');
     });
+
     this.create('category_product', table => {
       table.increments();
       table.integer('product_id').unsigned();

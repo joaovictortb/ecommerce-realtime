@@ -9,7 +9,6 @@ class CouponProductSchema extends Schema {
       table.increments();
       table.integer('coupon_id').unsigned();
       table.integer('product_id').unsigned();
-
       table.timestamps();
 
       table
@@ -23,7 +22,6 @@ class CouponProductSchema extends Schema {
         .references('id')
         .inTable('products')
         .onDelete('cascade');
-      table.timestamps();
     });
   }
 

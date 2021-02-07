@@ -5,11 +5,10 @@ const Schema = use('Schema');
 
 class CouponUserSchema extends Schema {
   up() {
-    this.create('coupon_users', table => {
+    this.create('coupon_user', table => {
       table.increments();
       table.integer('coupon_id').unsigned();
       table.integer('user_id').unsigned();
-
       table.timestamps();
 
       table
@@ -27,7 +26,7 @@ class CouponUserSchema extends Schema {
   }
 
   down() {
-    this.drop('coupon_users');
+    this.drop('coupon_user');
   }
 }
 

@@ -17,7 +17,6 @@ class CouponOrderSchema extends Schema {
         .references('id')
         .inTable('coupons')
         .onDelete('cascade');
-
       table
         .foreign('order_id')
         .references('id')

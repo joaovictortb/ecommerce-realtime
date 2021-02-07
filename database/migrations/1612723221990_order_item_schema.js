@@ -17,7 +17,6 @@ class OrderItemSchema extends Schema {
         .references('id')
         .inTable('products')
         .onDelete('cascade');
-
       table
         .foreign('order_id')
         .references('id')
