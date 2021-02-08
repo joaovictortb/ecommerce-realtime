@@ -19,3 +19,7 @@ const Route = use('Route');
 Route.get('/', () => {
   return { greeting: 'Funcionando!' };
 });
+
+require('./auth');
+
+require('./admin');
